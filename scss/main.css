@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Gudea|Lato|Lobster|Roboto");
+/* line 43, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 47, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+/* line 53, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+[class*="col-"] {
+  float: left;
+  padding: 15px; }
+
+/* For mobile phones: */
+/* line 59, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+[class*="col-"] {
+  width: 100%; }
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  /* line 65, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-m-1 {
+    width: 8.33%; }
+  /* line 68, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-m-2 {
+    width: 16.66%; }
+  /* line 71, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-m-3 {
+    width: 25%; }
+  /* line 74, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-m-4 {
+    width: 33.33%; }
+  /* line 77, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-m-5 {
+    width: 41.66%; }
+  /* line 80, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-m-6 {
+    width: 50%; }
+  /* line 83, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-m-7 {
+    width: 58.33%; }
+  /* line 86, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-m-8 {
+    width: 66.66%; }
+  /* line 89, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-m-9 {
+    width: 75%; }
+  /* line 92, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-m-10 {
+    width: 83.33%; }
+  /* line 95, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-m-11 {
+    width: 91.66%; }
+  /* line 98, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-m-12 {
+    width: 100%; } }
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  /* line 105, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-1 {
+    width: 8.33%; }
+  /* line 108, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-2 {
+    width: 16.66%; }
+  /* line 111, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-3 {
+    width: 25%; }
+  /* line 114, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-4 {
+    width: 33.33%; }
+  /* line 117, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-5 {
+    width: 41.66%; }
+  /* line 120, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-6 {
+    width: 50%; }
+  /* line 123, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-7 {
+    width: 58.33%; }
+  /* line 126, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-8 {
+    width: 66.66%; }
+  /* line 129, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-9 {
+    width: 75%; }
+  /* line 132, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-10 {
+    width: 83.33%; }
+  /* line 135, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-11 {
+    width: 91.66%; }
+  /* line 138, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .col-12 {
+    width: 100%; } }
+
+/* line 143, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+header {
+  background-color: #000000; }
+
+/* line 148, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+h1 {
+  font-family: "Lobster", sans-serif;
+  color: #ffffff;
+  text-align: center; }
+
+/* line 154, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: #C97FA1;
+  text-align: left; }
+
+/* line 160, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  text-align: left; }
+
+/* line 166, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.7em; }
+
+/* line 174, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+p {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-size: .75em;
+  line-height: 1.2em; }
+
+/* line 181, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+li {
+  font-family: "Roboto", sans-serif; }
+
+/* line 185, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+.panel {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+  /* line 33, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .panel:before, .panel:after {
+    content: "";
+    display: table; }
+  /* line 38, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .panel:after {
+    clear: both; }
+
+/* line 190, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+img {
+  max-width: 100%;
+  align-content: center;
+  display: inline;
+  margin: auto; }
+
+/* line 197, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+main {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ffffff;
+  float: left; }
+
+/* line 204, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+.video {
+  width: 50%;
+  margin: 0 auto;
+  align-items: center; }
+
+/* line 210, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+aside {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ffffff; }
+  /* line 33, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  aside:before, aside:after {
+    content: "";
+    display: table; }
+  /* line 38, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  aside:after {
+    clear: both; }
+
+/* line 217, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+nav {
+  width: 100%;
+  clear: both; }
+  /* line 220, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  nav ul {
+    background-color: #C97FA1;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  /* line 229, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  nav li {
+    display: inline-block;
+    font-size: 1em;
+    line-height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100px;
+    height: 45px; }
+  /* line 238, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  nav a {
+    display: block;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #ffffff; }
+    /* line 245, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+    nav a:hover {
+      background-color: #e7c7d6; }
+
+/* line 251, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+iframe {
+  align: center; }
+
+/* line 255, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+.embed {
+  width: 580px;
+  height: 215px; }
+
+/* line 260, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+footer {
+  background-color: #EED2Dc;
+  clear: both;
+  color: #ffffff;
+  padding-left: 10px;
+  text-align: left;
+  font-size: 10px; }
+
+@media screen and (min-width: 600px) {
+  /* line 270, /Users/khansen14/Desktop/sassKnot1/scss/main.scss */
+  .nav ul li {
+    width: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1em; } }
+
+/*# sourceMappingURL=main.css.map */

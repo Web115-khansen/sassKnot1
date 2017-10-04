@@ -1,0 +1,278 @@
+                    //Import
+                    @import url('https://fonts.googleapis.com/css?family=Gudea|Lato|Lobster|Roboto');
+                    //Varibles
+                    $foot-bg-color: #EED2Dc;
+                    $foot-font-color: #000000;
+                    $nav-text-color: #ffffff;
+                    $nav-bg-color:#C97FA1;
+                    $nav-hover-color: lighten($nav-bg-color,
+                    20%);
+                    $black: #000000;
+                    $white: #ffffff;
+                    $dkpink: #C97FA1;
+                    $dkpurple: #79537b;
+                    $ltpink: #EED2Dc;
+                    //Fonts
+                    $lobster: "Lobster",
+                    sans-serif;
+                    $lato: "Lato",
+                    sans-serif;
+                    $gudea: 'Gudea',
+                    sans-serif;
+                    $roboto: 'Roboto',
+                    sans-serif;
+                    //Mixins
+                    @mixin border-radius($radius) {
+                        -webkit-border-radius: $radius;
+                        -moz-border-radius: $radius;
+                        -ms-border-radius: $radius;
+                        border-radius: $radius;
+                    }
+                    
+                    @mixin clearfix() {
+                        &:before,
+                        &:after {
+                            content: "";
+                            display: table;
+                        }
+                        &:after {
+                            clear: both;
+                        }
+                    }
+                    
+                    * {
+                        box-sizing: border-box;
+                    }
+                    
+                    .row::after {
+                        content: "";
+                        clear: both;
+                        display: table;
+                    }
+                    
+                    [class*="col-"] {
+                        float: left;
+                        padding: 15px;
+                    }
+                    /* For mobile phones: */
+                    
+                    [class*="col-"] {
+                        width: 100%;
+                    }
+                    
+                    @media only screen and (min-width: 600px) {
+                        /* For tablets: */
+                        .col-m-1 {
+                            width: 8.33%;
+                        }
+                        .col-m-2 {
+                            width: 16.66%;
+                        }
+                        .col-m-3 {
+                            width: 25%;
+                        }
+                        .col-m-4 {
+                            width: 33.33%;
+                        }
+                        .col-m-5 {
+                            width: 41.66%;
+                        }
+                        .col-m-6 {
+                            width: 50%;
+                        }
+                        .col-m-7 {
+                            width: 58.33%;
+                        }
+                        .col-m-8 {
+                            width: 66.66%;
+                        }
+                        .col-m-9 {
+                            width: 75%;
+                        }
+                        .col-m-10 {
+                            width: 83.33%;
+                        }
+                        .col-m-11 {
+                            width: 91.66%;
+                        }
+                        .col-m-12 {
+                            width: 100%;
+                        }
+                    }
+                    
+                    @media only screen and (min-width: 768px) {
+                        /* For desktop: */
+                        .col-1 {
+                            width: 8.33%;
+                        }
+                        .col-2 {
+                            width: 16.66%;
+                        }
+                        .col-3 {
+                            width: 25%;
+                        }
+                        .col-4 {
+                            width: 33.33%;
+                        }
+                        .col-5 {
+                            width: 41.66%;
+                        }
+                        .col-6 {
+                            width: 50%;
+                        }
+                        .col-7 {
+                            width: 58.33%;
+                        }
+                        .col-8 {
+                            width: 66.66%;
+                        }
+                        .col-9 {
+                            width: 75%;
+                        }
+                        .col-10 {
+                            width: 83.33%;
+                        }
+                        .col-11 {
+                            width: 91.66%;
+                        }
+                        .col-12 {
+                            width: 100%;
+                        }
+                    }
+                    
+                    header {
+                        background-color: $black;
+                        // padding: 20px;
+                    }
+                    
+                    h1 {
+                        font-family: $lobster;
+                        color: $white;
+                        text-align: center;
+                    }
+                    
+                    h2 {
+                        font-family: $roboto;
+                        color: $dkpink;
+                        text-align: left;
+                    }
+                    
+                    h3 {
+                        font-family: $roboto;
+                        color: $black;
+                        text-align: left;
+                    }
+                    
+                    h4,
+                    h5 {
+                        font-family: $roboto;
+                        color: $white;
+                        text-align: center;
+                        font-size: 1.7em;
+                    }
+                    
+                    p {
+                        font-family: $roboto;
+                        color: $black;
+                        font-size: .75em;
+                        line-height: 1.2em;
+                    }
+                    
+                    li {
+                        font-family: $roboto;
+                    }
+                    
+                    .panel {
+                        @include clearfix();
+                        @include border-radius(5px);
+                    }
+                    
+                    img {
+                        max-width: 100%;
+                        align-content: center;
+                        display: inline;
+                        margin: auto;
+                    }
+                    
+                    main {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        background-color: $white;
+                        float: left;
+                    }
+                    
+                    .video {
+                        width: 50%;
+                        margin: 0 auto;
+                        align-items: center;
+                    }
+                    
+                    aside {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        background-color: $white;
+                        @include clearfix();
+                    }
+                    
+                    nav {
+                        width: 100%;
+                        clear: both;
+                        ul {
+                            background-color: $nav-bg-color;
+                            color: $nav-text-color;
+                            font-family: $roboto;
+                            text-align: center;
+                            margin: 0;
+                            padding: 0;
+                            list-style: none;
+                        }
+                        li {
+                            display: inline-block;
+                            font-size: 1em;
+                            line-height: 45px;
+                            padding-left: 5px;
+                            padding-right: 5px;
+                            width: 100px;
+                            height: 45px;
+                        }
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            padding-left: 5px;
+                            padding-right: 5px;
+                            //transition: .3s $nav-bg-color;
+                            color: $nav-text-color;
+                            &:hover {
+                                background-color: $nav-hover-color;
+                            }
+                        }
+                    }
+                    
+                    iframe {
+                        align: center;
+                    }
+                    
+                    .embed {
+                        width: 580px;
+                        height: 215px;
+                    }
+                    
+                    footer {
+                        background-color: $ltpink;
+                        clear: both;
+                        color: $white;
+                        padding-left: 10px;
+                        text-align: left;
+                        font-size: 10px;
+                    }
+                    
+                    @media screen and (min-width:600px) {
+                        .nav ul li {
+                            width: 100px;
+                            padding-left: 5px;
+                            padding-right: 5px;
+                            height: 45px;
+                            line-height: 45px;
+                            font-size: 1em;
+                        }
+                    }
